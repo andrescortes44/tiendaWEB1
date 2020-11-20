@@ -17,7 +17,7 @@
 
     <main>
     <div class="container">
-            <form action="registrarUsuarios.php" method="POST">
+            <form action="registrarProductos.php" method="POST">
                 <h1>DATOS DEL PRODUCTO</h1>
                 
                 <div class="row">
