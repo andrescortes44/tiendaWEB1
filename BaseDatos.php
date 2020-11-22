@@ -60,6 +60,43 @@
              return($consultaBuscarDatos->fetchAll());
         }
 
+        public function eliminarDatos($consultaSQL){
+
+            $conectar=$this->conectarBD();
+
+        
+            $consultaEliminarDatos= $conectar->prepare($consultaSQL);
+
+            
+            
+            $resultado=$consultaEliminarDatos->execute();
+                
+            if($resultado){
+                echo("Eliminado con exito");
+            }else{
+                print_r($consultaEliminarDatos->errorInfo());
+            }   
+        }
+
+        public function editarDatos($consultaSQL){
+
+            $conectar=$this->conectarBD();
+
+        
+            $consultaEditarDatos= $conectar->prepare($consultaSQL);
+
+            
+            
+            $resultado=$consultaEditarDatos->execute();
+                
+            if($resultado){
+                echo("Dato editado con exito");
+            }else{
+                print_r($consultaEditarDatos->errorInfo());
+            }   
+        }
+
+
 
     }
 

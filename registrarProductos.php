@@ -15,12 +15,10 @@
 
         //inserto datos
         $transaccion->agregarDatos($consultaSQL);
+        
+        
     }
 
-
-
-
-
-
-
+    header("Location: vistaProductos.php");
+    
 ?>

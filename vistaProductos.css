@@ -1,0 +1,60 @@
+header{  
+
+    background: #2193b0;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(191, 78%, 68%, 0.514), hsla(192, 68%, 41%, 0.548)),url(../tiendaWEB1/imagen/pexels-pixabay-264636.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    width: 100%; ;  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(191, 78%, 68%, 0.514), hsla(192, 68%, 41%, 0.514)), url(../tiendaWEB1/imagen/pexels-pixabay-264636.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    width: 100%; 
+    height: 500px;  
+    text-align: center;
+    padding-top: 10px;
+    position: relative;
+    background-attachment: fixed;
+    background-size: cover;
+   
+}
+
+header h1{
+    border-bottom:2px solid #ffffff;
+    color: #ffffff;
+    font-size: 50px;
+}
+.wave{
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+    }
+
+    .contenedor_cabecera{
+        display: flex;
+        width: 100%;
+        height: 330px;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        }
+
+    #descripcion{
+        min-height: 150px;
+        margin-bottom: 10px;
+   }
+
+   #editar, #eliminar{
+       height: 38px;
+       margin-top: 35%;
+   }
+   .hover{
+       position: absolute;
+       width: 100%;
+       height: 100%;
+       transform: scale(0); 
+       background:  rgba(109, 109, 109, 0.822);
+       transition: transform .5;
+       display: flex;
+       justify-content: space-evenly;
+       text-align: center;
+   }
+
+   .hover-img:hover .hover{
+    transform: scale(1);   
+}
