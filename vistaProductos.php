@@ -36,7 +36,7 @@
                 <div class="col mb-4">
                     <div class="hover-img">
                         <div class="card h-100">                        
-                            <img src="http://placeimg.com/640/480/tech" class="card-img-top" alt="imagen">
+                            <img src="<?php echo($producto["imagenes"])?>" class="card-img-top" alt="imagen">
                             <div class="hover">
                                 <button type="button" id="editar" class="btn btn-warning" data-toggle="modal" data-target="#editar<?php echo($producto["idProducto"])?>">
                                     EDITAR
