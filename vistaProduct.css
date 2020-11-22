@@ -63,4 +63,18 @@ header h1{
 
 #regresar{
     margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.nota{
+    margin-bottom: 50px;
+    font-weight: 300;
+}
+
+.nota span{
+    font-weight: bold;
+}
+
+#marca{
+    font-weight: 200;
 }

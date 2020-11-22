@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <link rel="stylesheet" href="vistaProductos.css">
+    <link rel="stylesheet" href="vistaProduct.css">
     <title>Productos</title>
 </head>
 <body>
@@ -14,6 +14,8 @@
         </section>
         <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #ffffff;"></path></svg></div>             
     </header>   
+
+    
 
     <?php
     
@@ -29,7 +31,7 @@
     ?>
 
     <div class="container">
-        
+        <p class="nota"><span>NOTA:</span> Para eliminar o editar pasa el click por encima de la imagen y listo.</p>
         <div class="row row-cols-1 row-cols-md-3">
 
             <?php foreach($productos as $producto):?>
@@ -47,7 +49,7 @@
                     </div>
                         <div class="card-body">
                             <h5 class="card-title"><?php echo($producto["nombre"])?></h5>
-                            <p class="card-text"><?php echo($producto["marca"])?></p>
+                            <p class="card-text" id="marca"><?php echo($producto["marca"])?></p>
                             <p class="card-text"><?php echo($producto["descripcion"])?></p>
                         </div>      
 
