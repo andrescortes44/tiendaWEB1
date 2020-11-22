@@ -60,3 +60,7 @@ header h1{
    .hover-img:hover .hover{
     transform: scale(1);   
 }
+
+#regresar{
+    margin-top: 40px;
+}

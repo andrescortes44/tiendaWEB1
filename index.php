@@ -31,7 +31,7 @@
                 
                 <input type="number" class="form-control" placeholder="Precio" name="precio" id="precio" autocomplete="off">
 
-                <input type="text" class="form-control" placeholder="imagen URL" name="imagen" autocomplete="off">
+                <input type="text" class="form-control" placeholder="imagen URL (1280x720)" name="imagen" autocomplete="off">
 
                 <div class="row mt-3">
                     
