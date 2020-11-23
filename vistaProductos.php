@@ -41,7 +41,7 @@
                             <img src="<?php echo($producto["imagenes"])?>" class="card-img-top" alt="imagen">
                             <div class="hover">
                                 <button type="button" id="editar" class="btn btn-warning" data-toggle="modal" data-target="#editar<?php echo($producto["idProducto"])?>">
-                                    EDITAR
+                                EDITAR
                                 </button>
                                 <a href="eliminarProducto.php?id=<?php echo($producto["idProducto"])?>" class="btn btn-danger" id="eliminar">ELIMINAR</a>                               
                             </div>
@@ -63,14 +63,23 @@
                                     </button>
                                 </div>
                                 <div class="modal-body">
-                                    <form action="">
+                                    <form action="editarProducto.php?id=<?php echo($producto["idProducto"])?>" method="POST">
                                         <div class="form-group">
                                             <label>Nombre:</label>
-                                            <input type="text" class="form-control" id="exampleInputPassword1" value="<?php echo($producto["nombre"])?>">
+                                            <input type="text" class="form-control" id="exampleInputPassword1" name="nombre" value="<?php echo($producto["nombre"])?>">
+                                            
+                                            <label>Marca:</label>
+                                            <input type="text" class="form-control" id="exampleInputPassword1" name="marca" value="<?php echo($producto["marca"])?>">
+
+                                            <label>precio:</label>
+                                            <input type="number" class="form-control" id="exampleInputPassword1" name="precio" value="<?php echo($producto["precio"])?>">
+
+                                            <label>Imagen:</label>
+                                            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="1280x720" name="imagen" value="<?php echo($producto["imagenes"])?>">
+
                                             <label>Descripción:</label>
-                                            <textarea class="form-control" rows="4" name="descripcion" id="descripcion"><?php echo($producto["descripcion"])?></textarea>               
-                                            <button type="submit" class="btn btn-info">Editar</button>
-                                        </div>
+                                            <textarea class="form-control" rows="4" name="descripcion" id="descripcion" name="descripcion"><?php echo($producto["descripcion"])?></textarea>               
+                                            <button type="submit" class="btn btn-info" name="botonEditar">Editar</button>                                        </div>
                                     </form>
                                 </div>                               
                             </div>
@@ -79,7 +88,7 @@
                 </div>
             <?php endforeach?>
         </div>      
-        <a href="index.php" class="btn btn-primary" id="regresar">REGRESAR A REGISTRAR</a>      
+        <a href="formularioRegistro.php" class="btn btn-primary" id="regresar">REGRESAR A REGISTRAR</a>      
     </div>
     
 

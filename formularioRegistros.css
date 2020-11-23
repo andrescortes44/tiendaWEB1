@@ -33,41 +33,26 @@ header h1{
         justify-content: center;
         }
         
-.decision{
-
-    width: 100%;
-    height: 100%;
+.container{
     padding-top: 30px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
 }
 
-.decision h1{
-    border-bottom: black solid 1px;
+#precio{
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
-.imagenes{
-    display: flex;
-    justify-content: space-evenly;
-    text-align: center;
-    margin-top: 50px;
+#descripcion{
+    min-height: 150px;
 }
 
-
-.botones{
-    display: flex;
-    justify-content: space-evenly;
-    text-align: center;
-}
-
-.botones a{
+#boton{
     width: 200px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-left: 40%;
+    margin-top: 15px;
+    margin-bottom: 50px;
 }
 
-#lista{
-    width: 250px;
-}
+
+
+
